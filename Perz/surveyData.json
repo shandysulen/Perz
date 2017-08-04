@@ -1,0 +1,25 @@
+[
+ {
+ "questionText": "What are you planning to build?",
+ "id": 1,
+ "answerOptions": [
+                   "Gaming PC",
+                   "Production PC",
+                   "Streaming PC",
+                   "Home-Theater PC (HTPC)",
+                   "Home Office PC",
+                   "Internet Box PC"
+                   ]
+ },
+ {
+ "questionText": "What is your budget?",
+ "id": 2,
+ "answerOptions": [
+                   "< $500",
+                   "$500 - $750",
+                   "$750 - 1000",
+                   "$1000 - $1500",
+                   "> $1500"
+                   ]
+ }
+ ]
