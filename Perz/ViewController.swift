@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        view.backgroundColor = UIColor(red: CGFloat(3/255), green: CGFloat(20/255), blue: CGFloat(36/255), alpha: CGFloat(1))
     }
     
     override func didReceiveMemoryWarning() {

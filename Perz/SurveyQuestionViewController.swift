@@ -11,6 +11,7 @@ import Foundation
 
 class SurveyQuestionViewController: UIViewController {
     
+    
     var question: SurveyQuestion! // implicitly unwrapped optional
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -19,9 +20,11 @@ class SurveyQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabel.textColor = .white
-        view.backgroundColor = UIColor(red: CGFloat(3/255), green: CGFloat(20/255), blue: CGFloat(36/255), alpha: CGFloat(1))
+        view.backgroundColor = UIColor(red: 3.0/255.0, green: 20.0/255.0, blue: 36.0/255.0, alpha: 1)
         questionLabel.text = question?.questionText
-
+        answerOptionTableView.tableFooterView = UIView()
+        answerOptionTableView.backgroundColor =  UIColor(red: 3.0/255.0, green: 20.0/255.0, blue: 36.0/255.0, alpha: 1)
+        questionLabel.backgroundColor =  UIColor(red: 3.0/255.0, green: 20.0/255.0, blue: 36.0/255.0, alpha: 1)
     }
     
 }
@@ -37,7 +40,7 @@ extension SurveyQuestionViewController: UITableViewDataSource {
         let cell = answerOptionTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = question.answerOptions[indexPath.row]
         cell.textLabel?.textColor = .white
-        cell.backgroundColor? = UIColor(red: CGFloat(39/255), green: CGFloat(54/255), blue: CGFloat(66/255), alpha: CGFloat(1))
+        cell.backgroundColor? = UIColor(red: 3.0/255.0, green: 20.0/255.0, blue: 36.0/255.0, alpha: 1)
         return cell
     }
     
