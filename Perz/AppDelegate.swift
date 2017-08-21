@@ -16,10 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //Set color to background as well as page indicators
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = .white
         pageControl.currentPageIndicatorTintColor = UIColor(colorLiteralRed: 207/255, green: 103/255, blue: 102/255, alpha: 1)
         pageControl.backgroundColor = UIColor(red: 3.0/255.0, green: 20.0/255.0, blue: 36.0/255.0, alpha: 1)
+        
+        //Onboarding Screen 
+        
         
         return true
     }

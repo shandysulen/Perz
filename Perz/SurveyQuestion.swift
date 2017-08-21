@@ -12,5 +12,6 @@ struct SurveyQuestion {
     var questionText: String
     var id: UInt
     var answerOptions: [String]
+    var answerOptionsDetailText: [String]?
 
 }

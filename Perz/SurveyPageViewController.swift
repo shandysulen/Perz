@@ -23,7 +23,7 @@ class SurveyPageViewController: UIPageViewController, UIPageViewControllerDataSo
                     print(objects)
                     
                     for object in objects {
-                        let question = SurveyQuestion(questionText: object["questionText"] as! String, id: object["id"] as! UInt, answerOptions: object["answerOptions"] as! [String])
+                        let question = SurveyQuestion(questionText: object["questionText"] as! String, id: object["id"] as! UInt, answerOptions: object["answerOptions"] as! [String], answerOptionsDetailText: object["answerOptionsDetailText"] as? [String])
                         questionsArray.append(question)
                     }
                 
@@ -49,6 +49,9 @@ class SurveyPageViewController: UIPageViewController, UIPageViewControllerDataSo
         for i in (0..<self.surveyQuestions.count) {
             guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SurveyQuestionViewController") as? SurveyQuestionViewController else { continue }
             vc.question = self.surveyQuestions[i]
+            if i == self.surveyQuestions.count - 1 {
+                
+            }
             vcs.append(vc)
         }
         

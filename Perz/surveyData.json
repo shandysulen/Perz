@@ -9,7 +9,15 @@
                    "Home-Theater PC (HTPC)",
                    "Home Office PC",
                    "Internet Box PC"
-                   ]
+                   ],
+ "answerOptionsDetailText": [
+                    "A Gaming PC can basically do any of the below tasks",
+                    "Used for video editing, rendering, 3D modeling, game dev",
+                    "Rendering, editing videos, and streaming for YouTube or Twitch",
+                    "Movie/TV viewing, music playback, web streaming",
+                    "General school-style research and writing",
+                    "Made for running browsers"
+                    ]
  },
  {
  "questionText": "What is your budget?",
